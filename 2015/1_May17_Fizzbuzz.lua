@@ -11,3 +11,31 @@
 ]]--
 
 -- Solution to be posted on May 24th, 2015
+
+-- Standard answer
+for index = 1, 100 do
+    if index%5 == 0 and index%3 == 0 then
+        print("FizzBuzz")
+    elseif index%3 == 0 then
+        print("Fizz")
+    elseif index%5 == 0 then
+        print("Buzz")
+    else
+        print(index)
+    end
+end
+
+-- Sukinahito's answer
+local results = { }
+for index = 1, 100 do
+    if index%15 == 0 then
+        results[index] = "FizzBuzz"
+    elseif index%3 == 0 then
+        results[index] = "Fizz"
+    elseif index%5 == 0 then
+        results[index] = "Buzz"
+    else
+        results[index] = index
+    end
+end
+print(table.concat(results, "\n"))
