@@ -17,7 +17,7 @@ function primeFactorization(x)
 end
 
 local output = { }
-for index = 1, 100 do
+for index = 2, 100 do
     output[index] = table.concat({
         index, "=", 
         table.concat(primeFactorization(index), "*")
