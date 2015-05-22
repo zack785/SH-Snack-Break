@@ -8,6 +8,9 @@
 -- “Buzz”. For numbers which are multiples of both three and five print 
 -- “FizzBuzz” instead. If the number is not divisible by either number, print
 -- out the number.
+--
+-- Relevant articles:
+-- http://en.wikipedia.org/wiki/Divisor
 ]]--
 
 -- Solution to be posted on May 24th, 2015
